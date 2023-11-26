@@ -1,0 +1,402 @@
+#title {
+    display: flex;
+    justify-content: center;
+    font-size: 6em;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.alfual {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.modul {
+    z-index: 0;
+    border-radius: 10px;
+    padding: 0 0.5em 0 0.5em;
+    background-color: #365521cf;
+    color: rgba(255, 255, 255, 0.95);
+    ;
+    border: 5px solid rgba(255, 255, 255, 0.521);
+    margin-bottom: 2px;
+    font-size: 2em;
+
+}
+
+.times {
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.521);
+    width: 90%;
+    height: 50%;
+    margin: auto;
+}
+
+.tid17 {
+    grid-column: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.tid18 {
+    grid-column: 1;
+    grid-row-start: 6;
+    grid-row-end: 8;
+}
+
+.tid19 {
+    grid-column: 1;
+    grid-row-start: 10;
+    grid-row-end: 12;
+}
+
+.tid20 {
+    grid-column: 1;
+    grid-row-start: 14;
+    grid-row-end: 16;
+}
+
+.tid21 {
+    grid-column: 1;
+    grid-row-start: 18;
+    grid-row-end: 20;
+}
+
+.tid22 {
+    grid-column: 1;
+    grid-row-start: 22;
+    grid-row-end: 24;
+}
+
+.tid23 {
+    grid-column: 1;
+    grid-row-start: 26;
+    grid-row-end: 28;
+}
+
+.ankomst {
+    grid-column: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.spisning {
+    grid-column: 2;
+    grid-row-start: 7;
+    grid-row-end: 13;
+}
+
+.oprydning {
+    grid-column: 2;
+    grid-row-start: 13;
+    grid-row-end: 15;
+}
+
+.pakkeleg {
+    grid-column: 2;
+    grid-row-start: 15;
+    grid-row-end: 20;
+}
+
+.dessert {
+    grid-column: 2;
+    grid-row-start: 21;
+    grid-row-end: 25;
+}
+
+.hafla {
+    grid-column: 2;
+    grid-row-start: 25;
+    border-bottom: 0px;
+    height: 2500%
+}
+
+.notis {
+    grid-column: 3;
+    grid-row-start: 29;
+    grid-row-end: 32;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.praktisk {
+    position: relative;
+    z-index: 100;
+    border-radius: 50px;
+    width: 95%;
+    padding: 30px 10px 30px 10px;
+    border: 4px solid;
+    display: grid;
+    grid-template-rows: 120px;
+    grid-template-columns: 150px auto 150px;
+    background-image: url(./images/treebg.jpg);
+    background-size: 300%;
+
+    animation-name: movep;
+    animation-iteration-count: infinite;
+    animation-duration: 500s;
+}
+
+@keyframes movep {
+    0% {
+        background-position: 100% 51%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 100% 51%;
+    }
+}
+
+
+
+
+.program {
+    border-radius: 50px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 0px 10px 10px 10px;
+    border: 4px solid;
+    display: grid;
+    grid-template-rows: repeat(30, 35px);
+    grid-template-columns: 150px auto 150px;
+    background-image: url(./images/treebg.jpg);
+    background-size: 300%;
+
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 500s;
+
+}
+
+@keyframes move {
+    0% {
+        background-position: 100% 0%;
+    }
+
+    50% {
+        background-position: 100% 43%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+
+
+}
+
+.p {
+    background-color: rgba(255, 255, 255, 0.521);
+    border-radius: 10px;
+    height: 100%;
+    font-size: 2em;
+    padding: 0px 0px 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.pinfo {
+    grid-row: 1;
+}
+
+.ptitel {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 5em;
+    background-color: #00000000;
+    text-align: center;
+}
+
+.ptid {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.psted {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.padgang {
+    grid-row: 4;
+    margin: 20px;
+}
+
+.pmad {
+    grid-row: 5;
+    grid-column: 2;
+
+}
+
+.pgave {
+    grid-row: 6;
+    grid-column: 2;
+
+}
+
+.psweater {
+    grid-row: 7;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.psweater p {
+    display: flex;
+    align-items: center;
+}
+
+.psweatersub {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: auto 150px;
+}
+
+
+
+.stid {
+    grid-row: 2;
+    grid-column: 1;
+    width: 70%;
+}
+
+.ssted {
+    grid-row: 3;
+    grid-column: 1;
+    width: 65%;
+}
+
+.smad {
+    grid-row: 5;
+    grid-column: 1;
+    width: 90%;
+}
+
+.sgave {
+    grid-row: 6;
+    grid-column: 1;
+    width: 90%;
+}
+
+.ssweater {
+    grid-row: 7;
+    grid-column: 1;
+    width: 90%;
+}
+
+.spil {
+    grid-row: 1;
+    grid-column: 2;
+    width: 90%;
+    cursor: pointer;
+}
+
+.symbol {
+    margin: auto;
+    display: block;
+}
+
+
+
+
+
+.sweaterdiv {
+    margin-top: 20px;
+    width: 100%;
+    height: 99vh;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.sweater-container {
+    width: 85vmin;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    position: relative;
+    /*!!! */
+    border-radius: 8px;
+}
+
+.sweater-wrapper {
+    border: 2px solid orange;
+    width: 100%;
+    display: flex;
+    animation: slide 20s infinite;
+    animation-timing-function: linear;
+    border: 20px #00000000;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-81.4%);
+    }
+
+    100% {
+        transform: translateX(-500%);
+    }
+}
+
+.sweater-wrapper img {
+    width: 90%;
+}
+
+.cover {
+    position: absolute;
+    width: 90vw;
+    height: 100%;
+    max-width: 800px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.cover::before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    bottom: 0;
+    z-index: 99;
+    height: 120%;
+    width: 300px;
+    background-image: linear-gradient(90deg, black, transparent);
+}
+
+.cover::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    height: 120%;
+    width: 300px;
+    background-image: linear-gradient(-90deg, black, transparent);
+}
